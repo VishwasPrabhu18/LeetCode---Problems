@@ -36,7 +36,6 @@ class Solution {
         }
 
         Arrays.sort(newArr);
-        double t;
         if((n1+n2)%2 == 1)
             return newArr[(n1+n2)/2] * 1.00000;
         else
