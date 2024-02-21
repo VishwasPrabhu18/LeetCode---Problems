@@ -22,6 +22,9 @@
  *                   8 is the missing number in the range since it does not appear in nums.
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public int missingNumber(int[] nums) {
         // Arrays.sort(nums);
@@ -36,10 +39,10 @@ class Solution {
         int len = nums.length;
         int total = len * (len + 1) / 2;
         int sum = 0;
-        for(Integer i: nums) {
+        for (Integer i : nums) {
             sum += i;
         }
-
+        
         return total - sum;
     }
 }
